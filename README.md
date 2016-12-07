@@ -12,8 +12,7 @@ Check out this repository.
 git clone https://github.com/endel/babylonjs-multiplayer-boilerplate.git
 ```
 
-Inside this repository, there's two separate applications. The client (babylonjs
-+ colyseus client) and the server (nodejs + colyseus server).
+Inside this repository, there's two separate applications. The client (babylonjs + colyseus client) and the server (nodejs + colyseus server).
 
 ### Client application
 
@@ -50,6 +49,11 @@ npm start
 ```
 
 It will spawn a web socket server, listening on [ws://localhost:2657](ws://localhost:2657).
+
+## Documentation
+
+- [BabylonJS documentation](https://doc.babylonjs.com/)
+- [Colyseus documentation](https://github.com/gamestdio/colyseus/wiki)
 
 ## Tooling
 
