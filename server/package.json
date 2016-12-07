@@ -1,0 +1,27 @@
+{
+  "name": "babylonjs-colyseus-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "onchange 'src/**.ts' -i -d 1000 -- ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "onchange": "^3.0.2",
+    "ts-node": "^1.6.1",
+    "typescript": "^2.2.0-dev.20161112"
+  },
+  "dependencies": {
+    "@types/cors": "0.0.33",
+    "@types/express": "^4.0.33",
+    "@types/node": "^6.0.46",
+    "@types/shortid": "0.0.28",
+    "colyseus": "^0.4.3-rc6",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "shortid": "^2.2.6"
+  }
+}
