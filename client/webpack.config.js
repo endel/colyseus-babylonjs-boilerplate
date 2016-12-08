@@ -19,7 +19,7 @@ module.exports = (function(options) {
 
     module: {
       rules: [
-        { test: /\.ts$/, loader: 'ts-loader' },
+        { test: /\.ts$/, loader: 'awesome-typescript-loader' },
         { test: /\.css$/, loader: ExtractTextPlugin.extract({ fallbackLoader: "style-loader", loader: "css-loader" }) },
         { test: /\.(woff|woff2|eot|ttf|svg)$/, loader: 'file-loader?limit=1024&name=[name].[ext]' },
       ]
