@@ -7,7 +7,7 @@
   "env": {
     "NPM_CONFIG_PRODUCTION": {
       "description": "When production is enabled, dev-dependencies won't be installed, not being able to build the project.",
-      "value": false
+      "value": "false"
     }
   }
 }
