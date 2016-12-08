@@ -23,6 +23,6 @@
   },
   "dependencies": {
     "babylonjs": "^2.5.0",
-    "colyseus.js": "^0.5.0"
+    "colyseus.js": "^0.5.1"
   }
 }
