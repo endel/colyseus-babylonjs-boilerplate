@@ -1,0 +1,21 @@
+{
+  "name": "babylonjs-colyseus",
+  "version": "1.0.0",
+  "description": "Boilerplate intended to be used for the BabylonJS 2.5 Challenge",
+  "main": "server/lib/index.js",
+  "scripts": {
+    "compile-server": "npm install --prefix server && tsc -p server",
+    "compile-client": "npm install --prefix client && cd client && ./node_modules/.bin/webpack && cd -",
+    "install": "npm run compile-server && npm run compile-client",
+    "start": "node server/lib/index.js"
+  },
+  "repository": {
+    "url": "git@github.com:endel/babylonjs-multiplayer-boilerplate.git",
+    "type": "git"
+  },
+  "author": "Endel Dreyer <endel.dreyer@gmail.com>",
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "typescript": "^2.1.4"
+  }
+}

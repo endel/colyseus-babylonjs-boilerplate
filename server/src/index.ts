@@ -16,7 +16,7 @@ const gameServer = new colyseus.Server({ server: server });
 gameServer.register("game", GameRoom);
 
 app.use(cors());
-app.use(express.static(path.join(__dirname, "..", "public")));
+app.use(express.static(path.join(__dirname, "..", "..", "client", "dist")));
 
 server.listen(port);
 console.log(`Listening on ${ port }`)

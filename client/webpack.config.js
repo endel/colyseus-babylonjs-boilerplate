@@ -4,8 +4,6 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-const ENDPOINT = "http://localhost:2657";
-
 module.exports = (function(options) {
   return {
     entry: {
@@ -28,9 +26,6 @@ module.exports = (function(options) {
     },
 
     plugins: [
-      new webpack.DefinePlugin({
-        'process.env': { 'ENDPOINT': `"${ ENDPOINT }"` }
-      }),
       new webpack.ProvidePlugin({
         BABYLON: "babylonjs"
       }),
