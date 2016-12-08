@@ -2,6 +2,8 @@
 
 This boilerplate is intended to be used for the [BabylonJS 2.5 Challenge](http://www.html5gamedevs.com/topic/26874-celebrating-25-babylonjs-challenge-is-back/)
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) | [Live demo](https://babylonjs-multiplayer.herokuapp.com/)
+
 **Requires [NodeJS v6.0.0+](https://nodejs.org/en/download/)**
 
 ## How to use

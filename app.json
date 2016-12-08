@@ -1,0 +1,13 @@
+{
+  "name": "BabylonJS + Colyseus",
+  "description": "Boilerplate integrating BabylonJS with Colyseus for multi-player games",
+  "repository": "https://github.com/endel/babylonjs-multiplayer-boilerplate",
+  "logo": "https://cdn.rawgit.com/endel/babylonjs-multiplayer-boilerplate/master/logo.png",
+  "keywords": ["babylonjs", "multiplayer", "colyseus"],
+  "env": {
+    "NPM_CONFIG_PRODUCTION": {
+      "description": "When production is enabled, dev-dependencies won't be installed, not being able to build the project.",
+      "value": false
+    }
+  }
+}
