@@ -10,7 +10,10 @@ This is a project setup to use BabylonJS 3.x with Colyseus 0.9.x.
 - [Colyseus 0.9.x](https://github.com/gamestdio/colyseus)
 - [Node.js 8.x+](https://nodejs.org/)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) | [Live demo](https://babylonjs-multiplayer.herokuapp.com/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+| [![Deploy to
+now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/zpnk/hello-world)
+| [Live demo](https://babylonjs-multiplayer.herokuapp.com/)
 
 **Requires [NodeJS v8.0.0+](https://nodejs.org/en/download/)**
 
