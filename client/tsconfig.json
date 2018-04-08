@@ -12,7 +12,7 @@
   "include": [
     "src/**/*.ts"
   ],
-  "files": [
-    "node_modules/babylonjs/babylon.d.ts"
+  "exclude": [
+    "node_modules/babylonjs/dist/preview release"
   ]
 }

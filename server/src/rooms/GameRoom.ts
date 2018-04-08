@@ -4,11 +4,11 @@ import { StateHandler } from "./StateHandler";
 import { Player } from "../entities/Player";
 
 export class GameRoom extends Room<StateHandler> {
+    maxClients = 8;
 
-    constructor (options) {
-        super(options);
-        this.setSimulationInterval(this.onUpdate);
-        this.setState(new StateHandler(this.clock));
+    onInit (options) {
+        this.setSimulationInterval(() => this.onUpdate());
+        this.setState(new StateHandler());
     }
 
     requestJoin (options) {
@@ -16,13 +16,10 @@ export class GameRoom extends Room<StateHandler> {
     }
 
     onJoin (client) {
-        if (this.clients.length === 8) {
-            this.lock();
-        }
-
         let player = new Player({
             name: `Player ${ this.clients.length }`
         });
+
         this.state.addPlayer(client.id, player);
     }
 
@@ -32,7 +29,7 @@ export class GameRoom extends Room<StateHandler> {
         console.log(`[ ${ client.id } ]`, player.name, "sent:", data);
     }
 
-    onUpdate = () => {
+    onUpdate () {
         this.state.update();
     }
 

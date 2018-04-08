@@ -5,7 +5,7 @@
   "main": "server/lib/index.js",
   "scripts": {
     "compile-server": "npm install --prefix server && tsc -p server",
-    "compile-client": "npm install --prefix client && cd client && ./node_modules/.bin/webpack && cd -",
+    "compile-client": "npm install --prefix client && cd client && ./node_modules/.bin/webpack --env.production && cd -",
     "install": "npm run compile-server && npm run compile-client",
     "start": "node server/lib/index.js"
   },

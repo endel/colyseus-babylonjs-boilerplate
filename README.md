@@ -1,10 +1,10 @@
-# babylonjs + multiplayer boilerplate
+# BabylonJS + Colyseus (multiplayer boilerplate)
 
 This boilerplate is intended to be used for the [BabylonJS 2.5 Challenge](http://www.html5gamedevs.com/topic/26874-celebrating-25-babylonjs-challenge-is-back/)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) | [Live demo](https://babylonjs-multiplayer.herokuapp.com/)
 
-**Requires [NodeJS v6.0.0+](https://nodejs.org/en/download/)**
+**Requires [NodeJS v8.0.0+](https://nodejs.org/en/download/)**
 
 ## How to use
 
@@ -55,7 +55,7 @@ It will spawn a web socket server, listening on [ws://localhost:2657](ws://local
 ## Documentation
 
 - [BabylonJS documentation](https://doc.babylonjs.com/)
-- [Colyseus documentation](https://github.com/gamestdio/colyseus/wiki)
+- [Colyseus documentation](http://colyseus.io/docs/)
 
 ## Tooling
 

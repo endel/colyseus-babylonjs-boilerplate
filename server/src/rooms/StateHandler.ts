@@ -1,15 +1,9 @@
-import ClockTimer from "clock-timer.js";
+import { EntityMap } from "colyseus";
 import { Player } from "../entities/Player";
-
-const clock: WeakMap<StateHandler, ClockTimer> = new WeakMap<StateHandler, ClockTimer>();
 
 export class StateHandler {
 
-    players: { [clientId: string]: Player } = {};
-
-    constructor (roomClock) {
-        clock.set(this, roomClock);
-    }
+    players: EntityMap<Player> = {};
 
     update (): void {
         //
