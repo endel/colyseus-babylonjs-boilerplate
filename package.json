@@ -10,7 +10,7 @@
     "start": "node server/lib/index.js"
   },
   "engines": {
-    "node": "6.9.1"
+    "node": "8.7.0"
   },
   "repository": {
     "url": "git@github.com:endel/babylonjs-multiplayer-boilerplate.git",
