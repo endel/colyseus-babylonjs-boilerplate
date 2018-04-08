@@ -1,4 +1,4 @@
-# BabylonJS + Colyseus (multiplayer boilerplate)
+# BabylonJS + Colyseus: Multiplayer Boilerplate
 
 This is a project setup to use BabylonJS 3.x with Colyseus 0.9.x.
 
