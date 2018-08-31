@@ -12,7 +12,7 @@ This is a project setup to use BabylonJS 3.x with Colyseus 0.9.x.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 | [![Deploy to
-now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/zpnk/hello-world)
+now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/endel/babylonjs-multiplayer-boilerplate)
 | [Live demo](https://babylonjs-multiplayer.herokuapp.com/)
 
 **Requires [NodeJS v8.0.0+](https://nodejs.org/en/download/)**
@@ -48,10 +48,10 @@ It will spawn the `webpack-dev-server`, listening on [http://localhost:8080](htt
 
 ### Server application
 
-For the server, the steps are exacly the same. Install the dependencies:
+For the server, the steps are exactly the same. Install the dependencies:
 
 ```
-cd babylonjs-multiplayer-boilerplate/client
+cd babylonjs-multiplayer-boilerplate/server
 npm install
 ```
 
