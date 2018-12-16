@@ -5,7 +5,7 @@ This is a project setup to use BabylonJS 3.x with Colyseus 0.9.x.
 ## Tooling
 
 - [Webpack 4.x](https://github.com/webpack/webpack)
-- [TypeScript 2.8.x](https://github.com/Microsoft/TypeScript)
+- [TypeScript 3.x](https://github.com/Microsoft/TypeScript)
 - [BabylonJS 3.x](https://github.com/BabylonJS/Babylon.js)
 - [Colyseus 0.9.x](https://github.com/gamestdio/colyseus)
 - [Node.js 8.x+](https://nodejs.org/)
