@@ -25,6 +25,10 @@ module.exports = function(options) {
 
     devtool: 'cheap-source-map',
 
+    devServer: {
+      disableHostCheck: true
+    },
+
     module: {
       rules: [
         { test: /\.ts$/, loader: "ts-loader" },
