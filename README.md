@@ -1,6 +1,6 @@
 # BabylonJS + Colyseus: Multiplayer Boilerplate
 
-This is a project setup to use BabylonJS 3.x with Colyseus 0.10.x.
+This is a project setup to use BabylonJS 4.x with Colyseus 0.10.x.
 
 <img src="screenshot.png?raw=true" />
 
@@ -8,7 +8,7 @@ This is a project setup to use BabylonJS 3.x with Colyseus 0.10.x.
 
 - [Webpack 4.x](https://github.com/webpack/webpack)
 - [TypeScript 3.x](https://github.com/Microsoft/TypeScript)
-- [BabylonJS 3.x](https://github.com/BabylonJS/Babylon.js)
+- [BabylonJS 4.x](https://github.com/BabylonJS/Babylon.js)
 - [Colyseus 0.10.x](https://github.com/colyseus/colyseus)
 - [Node.js 8.x+](https://nodejs.org/)
 
