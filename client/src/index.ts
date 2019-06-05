@@ -1,6 +1,6 @@
 import "./index.css";
 
-import * as BABYLON from "babylonjs";
+import BABYLON from "babylonjs";
 import Keycode from "keycode.js";
 
 import { client } from "./game/network";
