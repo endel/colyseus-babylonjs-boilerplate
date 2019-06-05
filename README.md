@@ -1,4 +1,4 @@
-# BabylonJS + Colyseus: Multiplayer Boilerplate
+# BabylonJS + Colyseus: Multiplayer Boilerplate <a href="https://patreon.com/endel" title="Donate to this project using Patreon"><img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.herokuapp.com%2Fendel&style=for-the-badge" alt="Patreon donate button"/></a>
 
 This is a project setup to use BabylonJS 4.x with Colyseus 0.10.x.
 
