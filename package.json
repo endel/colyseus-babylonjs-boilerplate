@@ -19,6 +19,6 @@
   "author": "Endel Dreyer <endel.dreyer@gmail.com>",
   "license": "Apache 2.0",
   "devDependencies": {
-    "typescript": "^2.8.1"
+    "typescript": "^3.5.1"
   }
 }

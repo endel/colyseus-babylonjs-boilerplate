@@ -3,7 +3,8 @@
     "outDir": "lib",
     "target": "es6",
     "module": "commonjs",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "experimentalDecorators": true
   },
   "include": [
     "src/**/*.ts"

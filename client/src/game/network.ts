@@ -7,4 +7,3 @@ const ENDPOINT = (window.location.hostname.indexOf("heroku") >= 0 || window.loca
     : `${ PROTOCOL }//${ window.location.hostname }:2657` // port 2657 on localhost
 
 export const client = new Client(ENDPOINT);
-export const room = client.join("game");

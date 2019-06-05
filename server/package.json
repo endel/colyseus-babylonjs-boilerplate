@@ -15,10 +15,10 @@
     "@types/node": "^6.0.113",
     "onchange": "^3.0.2",
     "ts-node": "^7.0.1",
-    "typescript": "^3.2.2"
+    "typescript": "^3.5.1"
   },
   "dependencies": {
-    "colyseus": "^0.9.22",
+    "colyseus": "^0.10.7",
     "cors": "^2.8.1",
     "express": "^4.14.0"
   }

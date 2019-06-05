@@ -1,13 +1,13 @@
 # BabylonJS + Colyseus: Multiplayer Boilerplate
 
-This is a project setup to use BabylonJS 3.x with Colyseus 0.9.x.
+This is a project setup to use BabylonJS 3.x with Colyseus 0.10.x.
 
 ## Tooling
 
 - [Webpack 4.x](https://github.com/webpack/webpack)
 - [TypeScript 3.x](https://github.com/Microsoft/TypeScript)
 - [BabylonJS 3.x](https://github.com/BabylonJS/Babylon.js)
-- [Colyseus 0.9.x](https://github.com/gamestdio/colyseus)
+- [Colyseus 0.10.x](https://github.com/colyseus/colyseus)
 - [Node.js 8.x+](https://nodejs.org/)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
@@ -66,7 +66,7 @@ It will spawn a web socket server, listening on [ws://localhost:2657](ws://local
 ## Documentation
 
 - [BabylonJS documentation](https://doc.babylonjs.com/)
-- [Colyseus documentation](http://colyseus.io/docs/)
+- [Colyseus documentation](https://docs.colyseus.io/)
 
 ## License
 
