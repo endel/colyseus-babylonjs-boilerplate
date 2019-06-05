@@ -2,6 +2,8 @@
 
 This is a project setup to use BabylonJS 3.x with Colyseus 0.10.x.
 
+<img src="screenshot.png?raw=true" />
+
 ## Tooling
 
 - [Webpack 4.x](https://github.com/webpack/webpack)
@@ -11,8 +13,6 @@ This is a project setup to use BabylonJS 3.x with Colyseus 0.10.x.
 - [Node.js 8.x+](https://nodejs.org/)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-| [![Deploy to
-now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/endel/babylonjs-multiplayer-boilerplate)
 | [Live demo](https://babylonjs-multiplayer.herokuapp.com/)
 
 **Requires [NodeJS v8.0.0+](https://nodejs.org/en/download/)**
