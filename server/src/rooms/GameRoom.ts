@@ -6,13 +6,9 @@ import { Player } from "../entities/Player";
 export class GameRoom extends Room<StateHandler> {
     maxClients = 8;
 
-    onInit (options) {
+    onCreate (options) {
         this.setSimulationInterval(() => this.onUpdate());
         this.setState(new StateHandler());
-    }
-
-    requestJoin (options) {
-        return true;
     }
 
     onJoin (client) {

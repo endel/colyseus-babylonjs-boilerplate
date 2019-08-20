@@ -38,8 +38,7 @@ var ground = BABYLON.Mesh.CreateGround("ground1", 6, 6, 2, scene);
 // camera.attachControl(canvas);
 
 // Colyseus / Join Room
-const room = client.join<StateHandler>("game");
-room.onJoin.add(() => {
+client.joinOrCreate<StateHandler>("game").then(room => {
     const playerViews: {[id: string]: BABYLON.Mesh} = {};
 
     room.state.players.onAdd = function(player, key) {
@@ -64,46 +63,45 @@ room.onJoin.add(() => {
         delete playerViews[key];
     };
 
-})
+    room.onStateChange((state) => {
+        console.log("New room state:", state.toJSON());
+    });
 
-room.onStateChange.add((state) => {
-    console.log("New room state:", state.toJSON());
-})
+    // Keyboard listeners
+    const keyboard: PressedKeys = { x: 0, y: 0 };
+    window.addEventListener("keydown", function(e) {
+        if (e.which === Keycode.LEFT) {
+            keyboard.x = -1;
+        } else if (e.which === Keycode.RIGHT) {
+            keyboard.x = 1;
+        } else if (e.which === Keycode.UP) {
+            keyboard.y = -1;
+        } else if (e.which === Keycode.DOWN) {
+            keyboard.y = 1;
+        }
+        room.send(['key', keyboard]);
+    });
+
+    window.addEventListener("keyup", function(e) {
+        if (e.which === Keycode.LEFT) {
+            keyboard.x = 0;
+        } else if (e.which === Keycode.RIGHT) {
+            keyboard.x = 0;
+        } else if (e.which === Keycode.UP) {
+            keyboard.y = 0;
+        } else if (e.which === Keycode.DOWN) {
+            keyboard.y = 0;
+        }
+        room.send(['key', keyboard]);
+    });
+
+    // Resize the engine on window resize
+    window.addEventListener('resize', function() {
+        engine.resize();
+    });
+});
 
 // Scene render loop
 engine.runRenderLoop(function() {
     scene.render();
-});
-
-// Keyboard listeners
-const keyboard: PressedKeys = { x: 0, y: 0 };
-window.addEventListener("keydown", function(e) {
-    if (e.which === Keycode.LEFT) {
-        keyboard.x = -1;
-    } else if (e.which === Keycode.RIGHT) {
-        keyboard.x = 1;
-    } else if (e.which === Keycode.UP) {
-        keyboard.y = -1;
-    } else if (e.which === Keycode.DOWN) {
-        keyboard.y = 1;
-    }
-    room.send(['key', keyboard]);
-});
-
-window.addEventListener("keyup", function(e) {
-    if (e.which === Keycode.LEFT) {
-        keyboard.x = 0;
-    } else if (e.which === Keycode.RIGHT) {
-        keyboard.x = 0;
-    } else if (e.which === Keycode.UP) {
-        keyboard.y = 0;
-    } else if (e.which === Keycode.DOWN) {
-        keyboard.y = 0;
-    }
-    room.send(['key', keyboard]);
-});
-
-// Resize the engine on window resize
-window.addEventListener('resize', function() {
-    engine.resize();
 });
