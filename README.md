@@ -1,6 +1,6 @@
 # BabylonJS + Colyseus: Multiplayer Boilerplate <a href="https://patreon.com/endel" title="Donate to this project using Patreon"><img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.herokuapp.com%2Fendel&style=for-the-badge" alt="Patreon donate button"/></a>
 
-This is a project setup to use BabylonJS 4.x with Colyseus 0.11.x.
+This is a project setup to use BabylonJS 4.x with Colyseus 0.12.x.
 
 <img src="screenshot.png?raw=true" />
 
@@ -9,7 +9,7 @@ This is a project setup to use BabylonJS 4.x with Colyseus 0.11.x.
 - [Webpack 4.x](https://github.com/webpack/webpack)
 - [TypeScript 3.x](https://github.com/Microsoft/TypeScript)
 - [BabylonJS 4.x](https://github.com/BabylonJS/Babylon.js)
-- [Colyseus 0.11.x](https://github.com/colyseus/colyseus)
+- [Colyseus 0.12.x](https://github.com/colyseus/colyseus)
 - [Node.js 8.x+](https://nodejs.org/)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
