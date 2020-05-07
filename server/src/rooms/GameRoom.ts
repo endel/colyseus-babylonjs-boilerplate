@@ -9,6 +9,11 @@ export class GameRoom extends Room<StateHandler> {
     onCreate (options) {
         this.setSimulationInterval(() => this.onUpdate());
         this.setState(new StateHandler());
+
+        this.onMessage("key", (client, message) => {
+            const player: Player = this.state.players[client.sessionId];
+            player.pressedKeys = message;
+        });
     }
 
     onJoin (client) {
@@ -19,15 +24,6 @@ export class GameRoom extends Room<StateHandler> {
         player.position.z = Math.random();
 
         this.state.players[client.sessionId] = player;
-    }
-
-    onMessage (client: Client, message: any) {
-        const [event, data] = message;
-        const player: Player = this.state.players[client.sessionId];
-
-        if (event === "key") {
-            player.pressedKeys = data;
-        }
     }
 
     onUpdate () {

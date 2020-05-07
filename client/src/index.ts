@@ -79,7 +79,7 @@ client.joinOrCreate<StateHandler>("game").then(room => {
         } else if (e.which === Keycode.DOWN) {
             keyboard.y = 1;
         }
-        room.send(['key', keyboard]);
+        room.send('key', keyboard);
     });
 
     window.addEventListener("keyup", function(e) {
@@ -92,7 +92,7 @@ client.joinOrCreate<StateHandler>("game").then(room => {
         } else if (e.which === Keycode.DOWN) {
             keyboard.y = 0;
         }
-        room.send(['key', keyboard]);
+        room.send('key', keyboard);
     });
 
     // Resize the engine on window resize
