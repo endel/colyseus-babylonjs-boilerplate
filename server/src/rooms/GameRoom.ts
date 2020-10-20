@@ -11,8 +11,7 @@ export class GameRoom extends Room<StateHandler> {
         this.setState(new StateHandler());
 
         this.onMessage("key", (client, message) => {
-            const player: Player = this.state.players[client.sessionId];
-            player.pressedKeys = message;
+            this.state.players.get(client.sessionId).pressedKeys = message;
         });
     }
 
@@ -23,19 +22,18 @@ export class GameRoom extends Room<StateHandler> {
         player.position.y = Math.random();
         player.position.z = Math.random();
 
-        this.state.players[client.sessionId] = player;
+        this.state.players.set(client.sessionId, player);
     }
 
     onUpdate () {
-        for (const sessionId in this.state.players) {
-            const player: Player = this.state.players[sessionId];
+        this.state.players.forEach((player, sessionId) => {
             player.position.x += player.pressedKeys.x * 0.1;
             player.position.z -= player.pressedKeys.y * 0.1;
-        }
+        });
     }
 
     onLeave (client: Client) {
-        delete this.state.players[client.sessionId];
+        this.state.players.delete(client.sessionId);
     }
 
     onDispose () {

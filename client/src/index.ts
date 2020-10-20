@@ -48,14 +48,15 @@ client.joinOrCreate<StateHandler>("game").then(room => {
         // Move the sphere upward 1/2 its height
         playerViews[key].position.set(player.position.x, player.position.y, player.position.z);
 
+        // Update player position based on changes from the server.
+        player.position.onChange = () => {
+            playerViews[key].position.set(player.position.x, player.position.y, player.position.z);
+        };
+
         // Set camera to follow current player
         if (key === room.sessionId) {
             camera.setTarget(playerViews[key].position);
         }
-    };
-
-    room.state.players.onChange = function(player, key) {
-        playerViews[key].position.set(player.position.x, player.position.y, player.position.z);
     };
 
     room.state.players.onRemove = function(player, key) {

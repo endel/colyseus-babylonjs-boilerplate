@@ -16,8 +16,4 @@ export class Player extends Schema {
     @type(Position) position = new Position();
 
     pressedKeys: PressedKeys = { x: 0, y: 0 };
-
-    constructor () {
-        super();
-    }
 }
