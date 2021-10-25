@@ -17,8 +17,7 @@ app.use(express.static(path.join(__dirname, "..", "..", "client", "dist")));
 // Create HTTP & WebSocket servers
 const server = http.createServer(app);
 const gameServer = new Server({
-    server: server,
-    express: app
+    server: server
 });
 gameServer.define("game", GameRoom);
 
