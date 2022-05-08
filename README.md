@@ -1,3 +1,11 @@
+Project archived. For an up-to-date example, please check:
+
+- https://doc.babylonjs.com/guidedLearning/multiplayer/Colyseus
+- https://github.com/colyseus/tutorial-babylonjs-client
+- https://github.com/colyseus/tutorial-babylonjs-server
+
+---
+
 # BabylonJS + Colyseus: Multiplayer Boilerplate
 
 This is a project setup to use BabylonJS 4.x with Colyseus 0.14.x.
