@@ -30,7 +30,7 @@ This is a project setup to use BabylonJS 4.x with Colyseus 0.14.x.
 Check out this repository.
 
 ```
-git clone https://github.com/endel/babylonjs-multiplayer-boilerplate.git
+git clone https://github.com/endel/colyseus-babylonjs-boilerplate.git
 ```
 
 Inside this repository, there's two separate applications. The client (babylonjs + colyseus client) and the server (nodejs + colyseus server).
@@ -41,7 +41,7 @@ To be able to build the client application, you'll need to enter in the folder,
 and install its dependencies first.
 
 ```
-cd babylonjs-multiplayer-boilerplate/client
+cd colyseus-babylonjs-boilerplate/client
 npm install
 ```
 
@@ -59,7 +59,7 @@ It will spawn the `webpack-dev-server`, listening on [http://localhost:8080](htt
 For the server, the steps are exactly the same. Install the dependencies:
 
 ```
-cd babylonjs-multiplayer-boilerplate/server
+cd colyseus-babylonjs-boilerplate/server
 npm install
 ```
 
